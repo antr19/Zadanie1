@@ -3,14 +3,10 @@
 
 int F(n)
 {
-    if(n==1)
-    {
+    if(n == 1)
         return 1;
-    }
-    else if (n==2)
-    {
+    else if (n == 2)
         return 1;
-    }
     else
         return (F(n-1)+F(n-2));
 }
@@ -18,9 +14,9 @@ int F(n)
 int main()
 {
     int n;
-    scanf("%d",&n);
-    if (n<=0)
+    scanf("%d", &n);
+    if (n <= 0)
         return -1;
-    printf("%d",F(n));
+    printf("%d", F(n));
     return 0;
 }
