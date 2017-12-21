@@ -31,7 +31,11 @@ int main(void)
     {
         if (k == (n + 1))
             break;
-
+        if (S[k]<mt)
+            {
+                k++;
+                continue;
+            }
         mt += Mas[k];
 
         printf("#%d Massa%d Sila%d\n", k+1, Mas[k], S[k]);
